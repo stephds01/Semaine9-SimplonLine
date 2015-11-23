@@ -1,0 +1,10 @@
+/**
+ * Created by Stéphanie on 23/11/2015.
+ */
+.selected {
+    background-color: #88f;
+}
+
+.poubelle {
+    display: none;
+}

@@ -2,7 +2,19 @@
   <dictionary name="Stéphanie">
     <words>
       <w>afficher</w>
+      <w>apparaitre</w>
+      <w>chaine</w>
+      <w>chiffre</w>
+      <w>cliquer</w>
+      <w>disparaitre</w>
+      <w>entrez</w>
+      <w>lettre</w>
       <w>liste</w>
+      <w>nombre</w>
+      <w>saisie</w>
+      <w>selectionne</w>
+      <w>selectionné</w>
+      <w>votre</w>
     </words>
   </dictionary>
 </component>
