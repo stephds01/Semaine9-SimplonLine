@@ -1,7 +1,6 @@
 /**
  * Created by Stéphanie on 23/11/2015.
  */
-//
 ////Pointer un ID particulier
 //$liste = document.getElementById("liste");
 //
@@ -22,6 +21,14 @@
 
 
 /*************  EXO   ***********/
+    //Demande d'une saisie
+var prenom = prompt("Entrer un prénom");
+
+//Création du tab
+var tabs = [];
+
+//Je push le prnom dsTab
+tabs.push(prenom);
 
 
 //Pointer l'element selectionné !
@@ -29,65 +36,43 @@ $liste = document.getElementById("liste");
 $disparaitre = document.getElementById("disparaitre");
 $apparaitre = document.getElementById("apparaitre");
 
+
+
+//J'affiche le mon tableau ds le <li>
+function afficher (prenom) {
+    var liElement = document.getElementsByTagName('li');
+    tabs.forEach(function(item){
+        console.log(item);
+
+    });
+}
+
+
+
 //e.target  => au <li> qui a été cliqué ds le <ul>
 function selectionne (e){
     e.target.classList.toggle("selected");
 }
 
-// Faire disparaitre les <li> grace au button
+// Faire disparaitre les <li> grace au button Effacer
 function effacer(){
-    $liste.style.display = 'none';
-}
+    for(var i = 0; i < $liste.children.length; i++){
+        if($liste.children[i].classList.contains("selected")) {
 
+            $liste.children[i].style.display = 'none';}
+    }
+}
 // Faire apparaitre les <li> grace au button
 function reapparaitre() {
-    $liste.style.display = 'block';
+
+    for(var i = 0; i < $liste.children.length; i++) {
+        $liste.children[i].style.display= "block";
+    }
 }
 
-
-
-
 // Qd je clique sur id ="?", je déroule la fonction selectionne()
+(afficher());
 $liste.onclick = selectionne;
-$disparaitre.onmousedown = effacer;
+$disparaitre.onclick = effacer;
 $apparaitre.onclick = reapparaitre;
-
-
-
-/*************  Correction  ***********/
-////Pointe les éléments
-//$liste = document.getElementById("liste");
-//$disparaitre = document.getElementById("disparaitre");
-//$apparaitre = document.getElementById("apparaitre");
-//
-//
-////création de fonction pour mettre un fond a l'elememnt
-// function select (e) {
-//     e.target.classList.toggle("selected");
-// }
-//
-////création de fonction disparaitre
-//function effacer (){
-//    for(var i = 0; i < $liste.children.length; i++){
-//        if($liste.children[i].classList.contains("selected")){
-//            $liste.children[i].classList.add("poubelle");
-//        }
-//    }
-//}
-//
-////création de fonction pour restaurer
-//function reapparaitre(){
-//    for(var i=0; i<$liste.children.length; i++) {
-//        $liste.children[i].classList.remove("poubelle");
-//    }
-//}
-//
-//$liste.onclick = select;
-//$disparaitre.onclick = effacer;
-//$apparaitre.onclick = reapparaitre;
-
-
-
-
-
 
