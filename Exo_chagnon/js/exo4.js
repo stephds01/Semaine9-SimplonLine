@@ -5,10 +5,10 @@
 var tabs = [-2, 1, 4];
 
 function additionne(x) {
-    tabs.forEach(function(item){
-        for(var i = 0; i < tabs.length; i++) {
-            var result = tabs[i] + x;
-            alert("Le résultat " + i + " vaut :" + result);
-        }
-    });
+    return (x + 2);
+}
+
+function affiche(){
+    alert(additionne(tabs[0]));
+    alert(additionne(tabs[tabs.length]-1));
 }
