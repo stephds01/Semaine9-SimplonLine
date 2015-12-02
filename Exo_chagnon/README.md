@@ -27,5 +27,9 @@
   ##Exo11 : Modification de la police
  
   ##Exo12 : Modification de contenu (RollOver)
+  
+#Premiers pas dans le DOM
+  
+  ##Méthodes getElementById, getElementsByName et getElementsByTagName
    
    
