@@ -26,6 +26,6 @@
    
   ##Exo11 : Modification de la police
  
-  ##Exo12 : Modification de contenu
+  ##Exo12 : Modification de contenu (RollOver)
    
    
