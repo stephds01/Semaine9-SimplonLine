@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f78f721d-1262-478e-a9b4-3fc946aeb565" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/html/exo10.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/html/exo5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/html/exo6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/html/exo7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/html/exo8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/html/exo9.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/js/exo10.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/js/exo5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/js/exo6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/js/exo7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/js/exo8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/js/exo9.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Unixvers/dom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Unixvers/js/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Stéphanie.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Stéphanie.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/html/exo11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exo_chagnon/js/exo11.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Semaine9-SimplonLine.iws" />
@@ -45,27 +31,27 @@
     <favorites_list name="Semaine9-SimplonLine" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4819413">
+    <splitter split-orientation="horizontal" split-proportion="0.4852185">
       <split-first>
         <leaf>
-          <file leaf-file-name="exo10.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo10.html">
+          <file leaf-file-name="exo11.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo11.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-12.192307">
-                  <caret line="21" column="195" selection-start-line="21" selection-start-column="195" selection-end-line="21" selection-end-column="195" />
+                <state vertical-scroll-proportion="0.31543624">
+                  <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Exo_chagnon/README.md">
               <provider editor-type-id="MarkdownPreviewEditor">
                 <state />
               </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.635514">
-                  <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+                <state vertical-scroll-proportion="-9.413794">
+                  <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -75,35 +61,13 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="exo10.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Exo_chagnon/js/exo10.js">
+          <file leaf-file-name="exo11.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Exo_chagnon/js/exo11.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.32346722">
+                  <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
                   <folding>
-                    <element signature="e#0#46#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="exo9.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo9.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5522042">
-                  <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="exo9.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Exo_chagnon/js/exo9.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#46#0" expanded="false" />
+                    <element signature="n#!!doc;n#Transform#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -117,8 +81,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -165,6 +129,8 @@
         <option value="$PROJECT_DIR$/Exo_chagnon/js/exo10.js" />
         <option value="$PROJECT_DIR$/Exo_chagnon/html/exo10.html" />
         <option value="$PROJECT_DIR$/Exo_chagnon/README.md" />
+        <option value="$PROJECT_DIR$/Exo_chagnon/html/exo11.html" />
+        <option value="$PROJECT_DIR$/Exo_chagnon/js/exo11.js" />
       </list>
     </option>
   </component>
@@ -178,9 +144,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="330" />
-    <option name="width" value="1236" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -387,17 +354,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="330" y="0" width="1236" height="860" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659865" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24659865" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3337912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3266129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -453,30 +420,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Exo_chagnon/js/exo4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo_3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo_3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -807,24 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.192307">
-          <caret line="21" column="195" selection-start-line="21" selection-start-column="195" selection-end-line="21" selection-end-column="195" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exo_chagnon/js/exo10.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40356082">
@@ -841,14 +766,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Exo_chagnon/js/exo10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4463895">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88461536">
+          <caret line="16" column="414" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Exo_chagnon/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.635514">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state vertical-scroll-proportion="-9.413794">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exo_chagnon/html/exo11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31543624">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exo_chagnon/js/exo11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32346722">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#Transform#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

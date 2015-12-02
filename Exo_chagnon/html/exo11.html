@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modification de la police</title>
+    <style>
+        p{
+            width:500px;
+            text-line-through: red;
+
+        }
+
+    </style>
+</head>
+
+<h1>Modification de la police</h1>
+<p>http://www.gchagnon.fr/cours/dhtml/exercices/exo3.html</p>
+
+    <p>Reproduire l'effet précédent :</p>
+    <ol>
+        <li onmouseover="this.style.fontFamily='Verdana'">police Verdana ;</li>
+        <li onmouseover="this.style.textDecoration='line-through'">un trait en travers des lettres (line-through) ;</li>
+        <li onmouseover="this.style.lineHeight='2'">une multiplication par 2 de la hauteur des lignes ;</li>
+        <li onmouseover="this.style.fontSize='150%'">une multiplication par 1,5 de la taille des caractères par rapport à la taille par défaut ;</li>
+        <li onmouseover="this.style.textTransform='Capitalize'; this.style.textTransform = 'red' "> une capitalisation des premières lettres des mots.</li>
+    </ol>
+    <p>... au passage de la souris</p>
+
+<ol onmouseover="this.style.fontFamily='Verdana'; this.style.textDecoration='line-through'; this.style.lineHeight='2'; this.style.fontSize='150%'; this.style.textTransform='Capitalize' ">
+    <li>police Verdana ;</li>
+    <li>un trait en travers des lettres (line-through) ;</li>
+    <li>une multiplication par 2 de la hauteur des lignes ;</li>
+    <li>une multiplication par 1,5 de la taille des caractères par rapport à la taille par défaut ;</li>
+    <li> une capitalisation des premières lettres des mots.</li>
+</ol>
+
+<p>Essai avec js ds un fichier différent</p>
+
+<ol id="text" onclick="Transform()">
+    <li>police Verdana ;</li>
+    <li>un trait en travers des lettres (line-through) ;</li>
+    <li>une multiplication par 2 de la hauteur des lignes ;</li>
+    <li>une multiplication par 1,5 de la taille des caractères par rapport à la taille par défaut ;</li>
+    <li> une capitalisation des premières lettres des mots.</li>
+</ol>
+
+
+<script type="text/javascript" src="../js/exo11.js"></script>
+</body>
+</html>
