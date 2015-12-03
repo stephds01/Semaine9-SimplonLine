@@ -1,19 +1,43 @@
-/**
- * Created by Stéphanie on 20/11/2015.
- */
-//Création du tableau de contact
-var contacts = ["Denis", "Alain", "Stephanie"];
+
+//Je récupère les id et les transforme en variable
+$liste = document.getElementById("liste");
+$texte = document.getElementById("texte");
+$ajouter = document.getElementById("ajouter");
+
+
+//Crée un tableau de contact
+var contacts = ["stéphanie", "Fred", "Alain"];
+
+
 
 //Créer une fonction afficher mon tableau de contact
-
 function afficherListe(){
 
-    for(var i = 0; i < contacts.length; i++) {
-        alert( contacts[i]);
-    }
+    //J'initialise un element vide
+    var element = " ";
+
+        for(var i = 0; i < contacts.length; i++) {
+
+            //Je boucle le tableau dans l'element
+            element += "<li>" + contacts[i] + "</li>";
+
+        }
+        $liste.innerHTML = element;
+}
+afficherListe();
+
+
+
+//Créer un fonction qui ajoute un prénom au tableau
+function ajouterElement() {
+    contacts.push($texte.value);
+    afficherListe();
 }
 
-document.write(afficherListe());
+//Je supprime le dernier element du tableau
+function supprimerElement() {
+    contacts.pop();
+    afficherListe();
+}
 
 
-Alors il faut faire une boucle for sur le count de ton array et chaque loop fera un getElementById avec un innerHTML qui ajoutera tes <li>
