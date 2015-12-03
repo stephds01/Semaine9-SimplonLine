@@ -1,0 +1,18 @@
+/*****************************
+/*          BASE
+******************************/
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.ls-container {
+    width: 500px;
+    border: 4px #4541ff solid;
+    background-color: #31f5ff;
+    padding: 20px;
+    /*margin-top: 150px;*/
+    margin: 150px auto;
+}
+
