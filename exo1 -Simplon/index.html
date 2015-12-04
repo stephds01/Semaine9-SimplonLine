@@ -6,12 +6,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="ls-header">
+        <img src="http://static5.pagesjaunes.fr/common/images/logo_pagesjaunes_-6868d0.png" width="100" height=100"/>
+        <h1>Annuaire Téléphonique</h1>
+    </div>
+    <nav class="ls-nav">
+        <div>
+            <a href="#inscrire" onclick="inscriptionBtn()" class="active">Inscrire</a>
+        </div>
+        <a href="#rechercher">Rechercher</a>
+        <a href="#liste">Annuaire</a>
 
+    </nav>
 
+    <div class="ls-container">
+
+       <div id="inscription">
+           <h2>S'inscrire dans l'annuaire</h2>
+
+           <form>
+               <p><label>Prénom</label>
+                    <input id="prenom" />
+               </p>
+
+               <p><label>Nom</label>
+                   <input id="nom" />
+               </p>
+
+               <p><label>Téléphone</label>
+                   <input id="numero" />
+               </p>
+
+               <button id="ajouter" class="ajouter" onclick="ajouterContact()">Ajouter</button>
+               <button id="supprimer" class="supprimer"  onclick="supprimerContact()">Supprimer</button>
+           </form>
+       </div>
+       <div id="rechercher">
+            <ul id="liste"></ul>
+
+            <h2>Rechercher un membre de l'annuaire</h2>
+
+                <input id="recherche" />
+                <button onclick="rechercheContact()">Rechercher</button>
+
+                <div id="resultatRecherche">
+                </div>
+       </div>
 
     </div>
-
+<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.8/jquery.mixitup.min.js"></script>
 <script src="js/exo1.js"></script>
 </body>
 </html>

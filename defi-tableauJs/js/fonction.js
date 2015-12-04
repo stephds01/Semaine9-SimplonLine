@@ -1,8 +1,8 @@
 
 //Je récupère les id et les transforme en variable
-$liste = document.getElementById("liste");
-$texte = document.getElementById("texte");
-$ajouter = document.getElementById("ajouter");
+var liste = document.getElementById("liste");
+var texte = document.getElementById("texte");
+var ajouter = document.getElementById("ajouter");
 
 
 //Crée un tableau de contact
@@ -22,7 +22,7 @@ function afficherListe(){
             element += "<li>" + contacts[i] + "</li>";
 
         }
-        $liste.innerHTML = element;
+        liste.innerHTML = element;
 }
 afficherListe();
 
@@ -30,7 +30,7 @@ afficherListe();
 
 //Créer un fonction qui ajoute un prénom au tableau
 function ajouterElement() {
-    contacts.push($texte.value);
+    contacts.push(texte.value);
     afficherListe();
 }
 

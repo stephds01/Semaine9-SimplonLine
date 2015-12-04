@@ -1,0 +1,124 @@
+/**************************************/
+/*       BASE
+/**************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+.ls-header {
+    width: 100%;
+    height: 120px;
+    display: inline-block;
+
+    background-color: #333;
+
+}
+
+.ls-header img, .ls-header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ls-header img {
+    padding: 12px 20px 10px 25px;
+}
+
+.ls-header h1 {
+    padding-left: 25%;
+    text-transform: uppercase ;
+    color:  #FFEB00;
+}
+
+.ls-nav {
+    width: 1000px;
+    margin:10vh auto 0;
+    background-color: #333;
+
+}
+.ls-nav a {
+    padding: 10px;
+    width: 30%;
+    display: inline-block;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#fdfffd;
+}
+
+/*.ls-nav .active {*/
+    /*background-color: #FFEB00;*/
+/*}*/
+
+
+
+
+
+.ls-container {
+    width: 960px;
+    margin:0 auto;
+
+    border-top: 2px #FFEB00 solid;
+    border-radius: 0 0 25px 25px;
+    background-color: #333;
+
+    padding: 20px;
+}
+
+.ls-container h2 {
+    color: #FFEB00;
+    text-align: center;
+}
+
+.ls-container form {
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    margin-left: 30%;
+
+}
+
+.ls-container label {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px #FFEB00 solid;
+    background-color: #FFEB00 ;
+    padding: 10px;
+    text-align: center;
+}
+.ls-container input {
+    width:  200px;
+    padding: 10px;
+
+    border: 4px #FFEB00 solid;
+    background-color: #cec8c8;
+}
+
+
+
+/*****************************************/
+/*          Module
+/****************************************/
+
+button {
+    width: 228px;
+    padding: 10px;
+    background-color: #FFEB00;
+    border-radius: 15px 0 15px 0;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.supprimer {
+    background-color: black;
+    color: white;
+}
+
+.ajouter {
+    border: 3px black solid;
+}
