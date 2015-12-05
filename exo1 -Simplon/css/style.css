@@ -119,6 +119,6 @@ button {
     color: white;
 }
 
-.ajouter {
+.ajouter, .rechercher {
     border: 3px black solid;
 }

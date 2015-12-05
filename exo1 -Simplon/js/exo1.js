@@ -135,12 +135,7 @@ alert(contactsTab[1].prenom);
 // Navigation
 
 //-----Page Inscription
-function inscriptionBtn() {
 
-}
-
-
-//});
 
 
 

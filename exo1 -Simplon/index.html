@@ -11,9 +11,7 @@
         <h1>Annuaire Téléphonique</h1>
     </div>
     <nav class="ls-nav">
-        <div>
-            <a href="#inscrire" onclick="inscriptionBtn()" class="active">Inscrire</a>
-        </div>
+        <a href="#inscrire" id="inscriptionBtn" class="active">Inscrire</a>
         <a href="#rechercher">Rechercher</a>
         <a href="#liste">Annuaire</a>
 
@@ -21,7 +19,7 @@
 
     <div class="ls-container">
 
-       <div id="inscription">
+       <div class="inscriptionPage">
            <h2>S'inscrire dans l'annuaire</h2>
 
            <form>
@@ -47,14 +45,14 @@
             <h2>Rechercher un membre de l'annuaire</h2>
 
                 <input id="recherche" />
-                <button onclick="rechercheContact()">Rechercher</button>
+                <button class="rechercher" onclick="rechercheContact()">Rechercher</button>
 
                 <div id="resultatRecherche">
                 </div>
        </div>
 
     </div>
-<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.8/jquery.mixitup.min.js"></script>
-<script src="js/exo1.js"></script>
+
+    <script src="js/exo1.js"></script>
 </body>
 </html>
