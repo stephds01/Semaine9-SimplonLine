@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: #FFEB00;
 }
 
 .ls-header {
@@ -40,18 +40,13 @@ body {
 }
 .ls-nav a {
     padding: 10px;
-    width: 30%;
+    width: 30.9%;
     display: inline-block;
-
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color:#fdfffd;
 }
-
-/*.ls-nav .active {*/
-    /*background-color: #FFEB00;*/
-/*}*/
 
 
 
@@ -59,6 +54,7 @@ body {
 
 .ls-container {
     width: 960px;
+    min-height: 50vh;
     margin:0 auto;
 
     border-top: 2px #FFEB00 solid;
@@ -74,9 +70,9 @@ body {
 }
 
 .ls-container form {
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: baseline;
-    text-align: center;
+    /*text-align: center;*/
     margin-left: 30%;
 
 }
@@ -94,11 +90,21 @@ body {
     width:  200px;
     padding: 10px;
 
+    /*margin-left: 26%;*/
+
     border: 4px #FFEB00 solid;
     background-color: #cec8c8;
 }
 
-
+.ls-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333 ;
+    padding: 10px;
+    color: #FFEB00;
+}
 
 /*****************************************/
 /*          Module
@@ -122,3 +128,55 @@ button {
 .ajouter, .rechercher {
     border: 3px black solid;
 }
+
+.active {
+    background-color: #FFEB00;
+    border: 2px #333 solid;
+    color: #333 !important;
+    font-weight: bold;
+
+}
+
+.mix {
+    width: 100%;
+}
+
+.containerRecherche {
+    margin-left: 26%;
+}
+
+
+table {
+    width: 100%;
+    margin-left: -123px;
+}
+table, td, th {
+    border: 1px white solid;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+th{
+    color: #FFEB00;
+}
+td{
+    color: #333;
+}
+
+
+
+
+
+
+
+
+/*****************************************/
+/*          EVENEMENT
+/****************************************/
+
+#Container .mix{
+    display: none;
+}
+
+

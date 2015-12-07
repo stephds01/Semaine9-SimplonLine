@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>poubelle</title>
+    <link href="style.css" rel="stylesheet"/>
+
+    <style>
+        /********A ajouter en CSS pour  cacher **********/
+        #Container .mix{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <button class="filter active" data-filter="none">All</button>
+        <button class="filter" data-filter=".category-1">PAGE 1</button>
+        <button class="filter" data-filter=".category-2">PAge 2</button>
+    </div>
+    <div id="Container" class="container">
+
+        <div class="mix category-1" data-myorder="1">Page 1</div>
+        <div class="mix category-2" data-myorder="2">Page 2</div>
+
+    </div>
+
+    <div>Bienvenue</div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script src="dossier.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $('#Container').mixItUp();
+    });
+</script>
+
+</body>
+</html>

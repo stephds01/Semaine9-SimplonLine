@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>tableaux</title>
+
+    <style>
+        table, tr {
+                     border:2px black solid;
+                 }
+
+        td {
+            border:2px red solid;
+        }
+    </style>
+</head>
+<body>
+<table id="tabHtml tbody">
+    <caption>Titre du tableau</caption>
+    <thead><!-- en-tête -->
+        <tr><!-- première ligne -->
+            <th id="nom">Nom</th>
+            <th id="prenom">Prenom</th>
+        </tr>
+    </thead>
+    <tbody id="tbody" >
+    <!--<tr id="">-->
+        <!--&lt;!&ndash; seconde ligne du tableau et première de tbody&ndash;&gt;-->
+
+    <!--</tr>-->
+    </tbody>
+    <tfoot>
+    <!--<tr>&lt;!&ndash; seconde ligne &ndash;&gt;-->
+        <!--<td> Première cellule</td>-->
+    <!--</tr>-->
+    </tfoot>
+</table>
+<script type="text/javascript">
+    var contacts =[
+        {
+            nom:"DE SA",
+            prenom:"Fred"
+        },
+        {
+            nom:"GOUJON",
+            prenom:"Steph"
+        }
+
+    ];
+
+    //Je récupère mon id="tbody"
+    var tbody = document.getElementById('tbody');
+
+    for( var i =0; i <contacts.length; i++) {
+
+        //Je crée un element tr
+        var tr = document.createElement('tr');
+
+        //Je crée un element td
+        var td = document.createElement('td');
+        var prenom = document.createTextNode(contacts[i].prenom);
+        prenom = td.appendChild(prenom);
+        //J'ajoute td dans mon tr
+        tr.appendChild(td);
+        //Je crée un element td
+        td = document.createElement('td');
+        var nom = document.createTextNode(contacts[i].nom);
+        td.appendChild(nom);
+        //J'ajoute td dans mon tr
+        tr.appendChild(td);
+        //J'ajoute tr dans mon tbody
+        tbody.appendChild(tr);
+    }
+
+</script>
+
+
+<!--<script type="text/javascript">
+//    var contacts =[
+//        {
+//            nom:"DE SA",
+//            prenom:"Fred"
+//        },
+//        {
+//            nom:"GOUJON",
+//            prenom:"Steph"
+//        }
+//
+//    ];
+
+    var Contacts = {
+        //Initialise le contact
+        init:function(prenom, nom){
+            this.prenom = prenom;
+            this.nom = nom;
+        }
+    };
+    //Création des contacts
+    var contact0 = Object.create(Contacts);
+    contact0.init("Stéphanie","DE SA");
+
+    var contact1 = Object.create(Contacts);
+    contact1.init("Alfredo","DE SA");
+
+
+    //Je crée un tableau Contact
+    var contacts = [];
+
+
+    //je pushe les contacts ds le tab
+    contacts.push(contact0);
+    contacts.push(contact1);
+
+//--------------------------------
+var tab = [
+     {num1 : "Hello"},
+     {num1 : "bonour"},
+     {num1 : "Tchao"},
+     {num1 : "Bye"}
+    ];
+
+function ligneTab(){
+    for(var i = 0; i< tab.length; i++ ){
+        return "<tr><td>" + tab[i] + "</td><td>" + tab[i] + "</td></tr>";
+
+    }
+}
+ligneTab();
+
+        //Je récupère mon id="tbody"
+var tbody = document.getElementById('tbody');
+
+//Je crée un element tbody
+var tr = document.createElement('tbody');
+
+
+/*
+    //Je récupère mon id="tbody"
+    var tbody = document.getElementById('tbody');
+
+    //Je crée un element tr
+    var tr = document.createElement('tr');
+
+    //J'ajoute tr dans mon tbody
+    tbody.appendChild(tr);
+
+        //Je boucle objet contacts ds td
+        for( var i =0; i <contacts.length; i++) {
+                var txtTd = document.createTextNode(contacts[i]);
+            console.log(contacts[i]);
+
+
+                //Je boucle le détails de l'object
+
+            for (var a= 0; a < contacts.length; a++) {
+                    //Je crée un element td
+                    var td = document.createElement('td');
+                    //J'ajoute td dans mon tr
+                    tr.appendChild(td);
+
+                    var prenom = document.createTextNode(contacts[a].prenom);
+                    prenom = td.appendChild(prenom);
+
+
+                    //Je crée un element td
+                    td = document.createElement('td');
+                    //J'ajoute td dans mon tr
+                    tr.appendChild(td);
+
+                    var nom = document.createTextNode(contacts[a].nom);
+                    td.appendChild(nom);
+                a++;
+            }
+        i++;
+        }
+        */
+
+</script>-->
+
+</body>
+</html>
