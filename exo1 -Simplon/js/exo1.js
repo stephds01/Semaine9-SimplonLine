@@ -49,7 +49,7 @@ var Contact = {
 };
 
 var contact0 = Object.create(Contact);
-contact0.init("Stéphanie","DE SA", "06 75 74 32 01");
+contact0.init("Stephanie","DE SA", "06 75 74 32 01");
 
 var contact1 = Object.create(Contact);
 contact1.init("Alfredo","DE SA", "06 80 46 38 42");
@@ -58,10 +58,16 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
     var contacts = [];
 
     //je pushe les contacts ds le tab
-    contacts.push(contacts[0]);
-    contacts.push(contacts[1]);
+    contacts.push(contact0);
+    contacts.push(contact1);
 
-    console.log(contacts);
+    ////Je boucle mon tableau d'objet
+    //contacts.forEach(function(contact){
+    //      console.log(contact);
+    //  });
+
+
+
 
 
 
@@ -74,9 +80,12 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
 
 
     var ajouter = document.getElementById('ajouter');
+    var nvxContact = document.getElementById('nvxContact');
     var supprimer = document.getElementById('supprimer');
 
-    var recherche = document.getElementById('recherche');
+    var rechercheNom = document.getElementById('rechercheNom');
+    var recherchePrenom = document.getElementById('recherchePrenom');
+    var rechercheNumero = document.getElementById('rechercheNumero');
     var resultatRecherche = document.getElementById('resultatRecherche');
 
 
@@ -84,14 +93,19 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
 
     /******* Création des functions ******/
 
+
+/*****************************************************************/
+/*              PAGE ANNUAIRE                                    */
+/*****************************************************************/
+
 /*******     //Je crée une fonction qui affiche les contacts    *****/
      function afficheContact() {
 
         //Je récupère mon id="liste"
         var liste = document.getElementById('liste');
 
-            //Je boucle mon tableau d'objet contact
-            for( var i =0; i <contacts.length; i++) {
+            //Je boucle mon tableau d'objet contacts
+            for( var i = 0 ; i < contacts.length; i++) {
                 //A l'intérieur de la boucle ce trouve le contenu de la ligne de mon tableau affichage HTML
 
                 //LE PRENOM
@@ -103,7 +117,7 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
                 var prenom = document.createTextNode(contacts[i].prenom);
 
                 //Ajoute le prénom ds le td
-                prenom = td.appendChild(prenom);
+                td.appendChild(prenom);
 
                 //J'ajoute td dans mon tr
                 tr.appendChild(td);
@@ -137,39 +151,59 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
                 liste.appendChild(tr);
             }
      }
+    //Affiche tes contacts ds le tableau HTML
     afficheContact();
 
 
 /******* Coloration d'une ligne sur 2 du tableau********/
-function colorLigne() {
+    function colorLigne() {
     //Je récupère l'id 'table' et je lui met la méthode row
     var ligneTab = document.getElementById('table').rows;
 
-    //Je crée un variable 'Jusqu'a la dernière ligne
+    //Je crée un variable Jusqu'à la dernière ligne
+    var ligne = ligneTab.length;
 
     //Je boucle les lignes du tableau
-    var ligne = ligneTab.length;
     var i = 0;
-    while (i < ligne){
+    while (i < ligne) {
         //si la ligne est pair on met une couleur sinon on met une autre couleur
-        if(i % 2 == 0){
+        if (i % 2 == 0) {
             ligneTab[i].style.backgroundColor = "#ffe502";
         } else {
             ligneTab[i].style.backgroundColor = "#d3d1d1";
         }
         i++;
     }
+
     //J'ajoute une couleur différente au tHead
     var bg = document.getElementById('bg');
-    bg.style.backgroundColor="#333";
+    bg.style.backgroundColor = "#333";
 }
 colorLigne();
 
 
 
+/*****************************************************************/
+/*              PAGE INSCRIRE                                    */
+/*****************************************************************/
+
+/********* Fonction qui affiche le nvx Contact souc le formulaire d'inscription***********/
+function afficherListeNvxContact(){
+    var element = "";
+    for(var i =0; i< contacts.length; i++){
+        element += "<li>";
+        element += contacts[i].prenom + " " + contacts[i].nom + " " + contacts[i].numero;
+        element += "</li>";
+    }
+    nvxContact.innerHTML = element;
+}
+afficherListeNvxContact();
+
+
+
 /*******Je crée une fonction qui ajoute un contact********/
 
-function ajouterContact() {
+    function ajouterContact() {
     contacts.push(
         {
             prenom: prenom.value,
@@ -177,75 +211,66 @@ function ajouterContact() {
             numero: numero.value
 
         });
-    contacts.push(contact);
-
-
-
-    ////J'ajoute une ligne à mon tableau html
-    var ligne = liste.insertRow(-1);
-
-    //j'ajoute une 1ère cellulle a ma ligne'
-    var col1 = ligne.insertCell(0);
-    col1.innerHTML += document.getElementById('prenom').value;
-
-    //j'ajoute une 2ème cellulle a ma ligne'
-    var col2 = ligne.insertCell(0);
-    col2.innerHTML += document.getElementById('nom').value;
-
-    //j'ajoute une 2ème cellulle a ma ligne'
-    var col3 = ligne.insertCell(0);
-    col3.innerHTML += document.getElementById('numero').value;
-
-        contacts.push(
-            {
-                prenom: prenom.value,
-                nom: nom.value,
-                numero: numero.value
-
-            });
-    contacts.push(contact1);
-        afficheContact();
+    afficherListeNvxContact();
     }
 
 
 /******Je crée un fonction qui supprime le dernier contact****/
     function supprimerContact() {
         contacts.pop();
-        afficheContact();
+    afficherListeNvxContact();
     }
 
 
 
 
-
-/*************fonction qui affiche le texte des valeurs du contact***********/
-    function texteContact(contacts) {
-        console.log('bob');
-        //J'affiche la recherche dans une DIV
-        resultatRecherche.innerHTML = "Le prénom est : " + contacts.nom + " , Le nom est : " + contacts.prenom + " , le numéro de téléphone est : " + contacts.numero ;
-    }
-
-    //console.log('resultat',resultatRecherche);
+/*****************************************************************/
+/*              PAGE RECHERCHE                                   */
+/*****************************************************************/
 
 
 /****************Je crée une fonction de recherche de contact**************/
     function rechercheContact () {
 
-        for(var i = 0; i < contacts.length; i++) {
-            //recherche = recherche.value;
-            //var element = " ";
-            if (contacts[i].prenom === recherche.value) {
 
-                console.log(contacts[i].prenom);
-                console.log(recherche);
-                texteContact(contacts[i]);
-            } else {
-                resultatRecherche.innerHTML = "Désolé, ce membre n'existe pas dans notre annuaire";
-            }
+    for(var i = 0; i < contacts.length; i++) {
 
+        rechercheNom.value = rechercheNom.value.toLowerCase();
+        recherchePrenom.value = recherchePrenom.value.toLowerCase();
+        rechercheNumero.value = Number(rechercheNumero.value);
+
+        contacts[i].prenom = contacts[i].prenom.toLowerCase();
+        contacts[i].nom = contacts[i].nom.toLowerCase();
+
+        var titreH3 = "Voici le résultat de votre recherche : ";
+
+        if (contacts[i].prenom === recherchePrenom.value) {
+            var element = " ";
+
+                element += contacts.prenom;
+                resultatRecherche.innerHTML = titreH3 + "<br />" + contacts[i].nom.toUpperCase() + " " + contacts[i].prenom.toUpperCase() + " " + contacts[i].numero;
+
+
+        }else if (contacts[i].nom === rechercheNom.value) {
+            element = " ";
+
+            element += contacts.nom;
+            resultatRecherche.innerHTML = titreH3 + "<br />" + contacts[i].nom.toUpperCase() + " " + contacts[i].prenom.toUpperCase() + " " + contacts[i].numero;
+
+        } else if (contacts[i].numero === rechercheNumero.value) {
+            element = " ";
+
+            element += contacts.numero;
+            resultatRecherche.innerHTML = titreH3 + contacts[i].nom.toUpperCase() + " " + contacts[i].prenom.toUpperCase() + " " + contacts[i].numero;
+
+        } else {
+            resultatRecherche.innerHTML = "Désolé, ce membre n'existe pas dans notre annuaire";
         }
-
     }
+
+}
+
+
 
 
 

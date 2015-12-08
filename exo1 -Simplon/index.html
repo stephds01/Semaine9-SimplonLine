@@ -57,6 +57,12 @@
                        <button id="ajouter" class="ajouter" onclick="ajouterContact()">Ajouter</button>
                        <button id="supprimer" class="supprimer"  onclick="supprimerContact()">Supprimer</button>
                    </form>
+
+                   <div class="paragraphe">
+                       <h2>Affichage des derniers contacts</h2>
+                       <ul id="nvxContact">
+                       </ul>
+                   </div>
                 </div>
 
 
@@ -67,9 +73,14 @@
                 <div class="mix category-2" data-myorder="2">
                     <h2>Rechercher dans l'annuaire</h2>
                     <div class="containerRecherche">
-                        <input id="recherche" />
+                        <input id="rechercheNom" placeholder="Nom"/>
+                        <input id="recherchePrenom" placeholder="Prenom"/>
+                        <input id="rechercheNumero" placeholder="Numéro"/>
                         <button class="rechercher" onclick="rechercheContact()">Rechercher</button>
                     </div>
+                    <div>
+                        <h4></h4>
+                        <p id="resultatRecherche" class="texteRecherche"></p>
                     </div>
                     <!--<div class="AffichageContactPage">-->
                         <!--<div id="resultatRecherche">-->
@@ -84,7 +95,7 @@
 
                 <div class="mix category-3" data-filter="3">
                     <h2>Affichage des contacts dans l'annuaire</h2>
-                    <div class="containerRecherche">
+                    <div class="containerAffichage">
                         <div id="rechercher">
                             <table id="table">
                                 <thead>

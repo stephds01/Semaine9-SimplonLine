@@ -142,10 +142,12 @@ button {
 }
 
 .containerRecherche {
-    margin-left: 26%;
+    margin-left: 15%;
 }
 
-
+.containerAffichage {
+    margin-left: 26%;
+}
 table {
     width: 100%;
     margin-left: -123px;
@@ -165,7 +167,24 @@ td{
 }
 
 
+.texteRecherche {
+    text-align: center;
+    color: #fefefe;
+}
 
+.paragraphe {
+    margin-left: 200px;
+    margin-top: 60px;
+
+}
+
+.paragraphe h2{
+    text-align: left;
+}
+.paragraphe ul {
+    color: white;
+    padding-left: 0;
+}
 
 
 
