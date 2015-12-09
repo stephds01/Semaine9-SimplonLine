@@ -1,0 +1,150 @@
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #333;
+    }
+
+    #containainerPrincipal {
+        width:100%;
+    }
+
+    .not_mobile {
+        display: none;
+    }
+    .ls-container {
+        width: 500px;
+        border:none;
+    }
+
+    .ls-container h2 {
+        text-align: left;
+    }
+    h2 {
+        display: block;
+        font-size: 1.1em;
+    }
+    .ls-header h1 {
+        font-size: 1.1em;
+        padding-left: 5%;
+    }
+    .mix {
+        display: block;
+    }
+
+    .ls-nav {
+        width: 100%;
+        margin:0 auto;
+
+    }
+    .ls-nav a {
+        width: 90%;
+        display: block;
+        margin-left: 3%;
+        border: 2px #FFEB00 solid;
+        margin-bottom: 5px;
+    }
+    .ls-container form {
+         text-align: left;
+         margin-left: 0%;
+    }
+
+    .ls-container label {
+        width: 140px;
+    }
+
+    button {
+        width: 195px;
+    }
+
+    .texteRecherche {
+        text-align: left;
+    }
+
+    .paragraphe {
+         margin-left: 20px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px){
+    body {
+        background-color: #333;
+    }
+
+    #containainerPrincipal {
+        width:100%;
+    }
+
+    .not_mobile {
+        display: none;
+    }
+    .ls-container {
+        width: 500px;
+        border:none;
+
+    }
+
+    .ls-container h2 {
+        text-align: left;
+    }
+    h2 {
+        display: block;
+        font-size: 1.1em;
+    }
+    .ls-header h1 {
+        font-size: 1.1em;
+        padding-left: 5%;
+    }
+    .mix {
+        display: block;
+    }
+
+    .ls-nav {
+        width: 100%;
+        margin:0 auto;
+
+    }
+    .ls-nav a {
+        width: 90%;
+        display: block;
+        margin-left: 3%;
+        border: 2px #FFEB00 solid;
+        margin-bottom: 5px;
+    }
+    .ls-container form {
+        text-align: left;
+        margin-left: 0%;
+    }
+
+    .ls-container label {
+        width: 140px;
+    }
+
+    button {
+        width: 195px;
+    }
+
+    .texteRecherche {
+        text-align: left;
+    }
+
+    .paragraphe {
+        margin-left: 20px;
+    }
+
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
