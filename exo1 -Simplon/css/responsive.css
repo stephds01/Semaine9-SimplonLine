@@ -44,7 +44,7 @@
     }
     .ls-container form {
          text-align: left;
-         margin-left: 0%;
+         margin-left: 0;
     }
 
     .ls-container label {
@@ -115,7 +115,7 @@
     }
     .ls-container form {
         text-align: left;
-        margin-left: 0%;
+        margin-left: 0;
     }
 
     .ls-container label {
@@ -139,7 +139,6 @@
 
 }
 
-}
 
 
 

@@ -72,16 +72,13 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
 
 
     /********   Récupération des Id et les transformer en variable   ******/
-    var liste = document.getElementById('liste');
 
     var prenom = document.getElementById('prenom');
     var nom = document.getElementById('nom');
     var numero = document.getElementById('numero');
 
 
-    var ajouter = document.getElementById('ajouter');
     var nvxContact = document.getElementById('nvxContact');
-    var supprimer = document.getElementById('supprimer');
 
     var rechercheNom = document.getElementById('rechercheNom');
     var recherchePrenom = document.getElementById('recherchePrenom');
