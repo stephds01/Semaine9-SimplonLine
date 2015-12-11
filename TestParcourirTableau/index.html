@@ -12,9 +12,15 @@
         td {
             border:2px red solid;
         }
+        .selected{
+            background: #fff;
+        }
     </style>
 </head>
+
+
 <body>
+
 <table id="tabHtml tbody">
     <caption>Titre du tableau</caption>
     <thead><!-- en-tête -->
@@ -35,7 +41,26 @@
     <!--</tr>-->
     </tfoot>
 </table>
+
+<div>
+    <ul id="liste">
+        <li>un</li>
+        <li>deux</li>
+        <li>trois</li>
+    </ul>
+</div>
+
+
 <script type="text/javascript">
+
+    var liste = document.getElementById("liste");
+    function selectionne(e) {
+        e.target.classList.toggle("selected");
+    }
+    liste.onclick = selectionne;
+</script>
+
+</script>
     var contacts =[
         {
             nom:"DE SA",

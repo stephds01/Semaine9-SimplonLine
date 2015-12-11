@@ -203,4 +203,13 @@ td{
     display: none;
 }
 
+.effacer {
+    display: none;
+}
+
+.restaurer {
+    display: block;
+}
+
+
 

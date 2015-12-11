@@ -63,8 +63,10 @@
 
                    <div class="paragraphe">
                        <h2>Affichage des derniers contacts</h2>
-                       <ul id="nvxContact">
+                       <ul id="nvxContact" class="nvxContact">
                        </ul>
+                       <button onclick="effacerContact()">Effacer</button>
+                       <button onclick="restaurer()">Restaurer</button>
                    </div>
                 </div>
 
@@ -121,17 +123,18 @@
 
     </div>
 
-    <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
-    <!--<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="js/mixitup.js"></script>
     <script src="js/exo1.js"></script>
 
-<script type="text/javascript">
-    //Instancie le plugIn MixitUp
-    $(function(){
-        $('#Container').mixItUp();
-    });
+    <script type="text/javascript">
+        //Instancie le plugIn MixitUp
+        $(function(){
+            $('#Container').mixItUp();
+        });
 
-</script>
+    </script>
+
 </body>
 </html>

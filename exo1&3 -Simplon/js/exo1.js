@@ -49,10 +49,13 @@ var Contact = {
 };
 
 var contact0 = Object.create(Contact);
-contact0.init("Stephanie","DE SA", "06 75 74 32 01");
+contact0.init("Stephanie","GOUJON", "06 75 74 32 01");
 
 var contact1 = Object.create(Contact);
 contact1.init("Alfredo","DE SA", "06 80 46 38 42");
+
+var contact2 = Object.create(Contact);
+contact2.init("Celia","DE SA", "06 00 00 00 00");
 
     //Je crée un tableau Contact
     var contacts = [];
@@ -60,6 +63,7 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
     //je pushe les contacts ds le tab
     contacts.push(contact0);
     contacts.push(contact1);
+    contacts.push(contact2);
 
     ////Je boucle mon tableau d'objet
     //contacts.forEach(function(contact){
@@ -184,7 +188,7 @@ colorLigne();
 /*              PAGE INSCRIRE                                    */
 /*****************************************************************/
 
-/********* Fonction qui affiche le nvx Contact souc le formulaire d'inscription***********/
+/********* Fonction qui affiche le nvx Contact sous le formulaire d'inscription***********/
 function afficherListeNvxContact(){
     var element = "";
     for(var i =0; i< contacts.length; i++){
@@ -195,6 +199,17 @@ function afficherListeNvxContact(){
     nvxContact.innerHTML = element;
 }
 afficherListeNvxContact();
+
+
+/*************  Bouton pour supprimer le conteneu ou le faire réapparaitre ********/
+function effacerContact () {
+        nvxContact.style.display="none";
+}
+
+function restaurer () {
+    nvxContact.style.display="block";
+}
+
 
 
 
@@ -227,45 +242,80 @@ afficherListeNvxContact();
 
 
 /****************Je crée une fonction de recherche de contact**************/
-    function rechercheContact () {
+function rechercheContact () {
 
 
-    for(var i = 0; i < contacts.length; i++) {
+    for (var i = 0; i < contacts.length; i++) {
 
+        //On transforme en minuscule la valeur du champ INPUT
         rechercheNom.value = rechercheNom.value.toLowerCase();
         recherchePrenom.value = recherchePrenom.value.toLowerCase();
-        rechercheNumero.value = Number(rechercheNumero.value);
 
-        contacts[i].prenom = contacts[i].prenom.toLowerCase();
+        //On transforme en minuscule les élément du tab
         contacts[i].nom = contacts[i].nom.toLowerCase();
+        contacts[i].prenom = contacts[i].prenom.toLowerCase();
 
+        //Creatioin d'une variable texte
         var titreH3 = "Voici le résultat de votre recherche : ";
 
-        if (contacts[i].prenom === recherchePrenom.value) {
-            var element = " ";
+        var a = contacts[i].nom;
+        var b = contacts[i].prenom;
+        var c = contacts[i].numero;
+        var text = titreH3 + "<br />" + contacts[i].nom.toUpperCase() + " " + contacts[i].prenom.toUpperCase() + " " + contacts[i].numero;
 
-                element += contacts.prenom;
-                resultatRecherche.innerHTML = titreH3 + "<br />" + contacts[i].nom.toUpperCase() + " " + contacts[i].prenom.toUpperCase() + " " + contacts[i].numero;
+        if (a === rechercheNom.value) {
+
+            //resultatRecherche.innerHTML = "a";
+
+            if (a === rechercheNom.value && b === recherchePrenom.value) {
+                resultatRecherche.innerHTML = "a + b" + text;
+
+            } else if (a === rechercheNom.value && c === rechercheNumero.value) {
+                resultatRecherche.innerHTML = "a + c" + text;
+
+            } else{
+                resultatRecherche.innerHTML = "a" + "ésolé pas de contact a ce nom";
+            }
 
 
-        }else if (contacts[i].nom === rechercheNom.value) {
-            element = " ";
+        } else if (b === recherchePrenom.value) {
 
-            element += contacts.nom;
-            resultatRecherche.innerHTML = titreH3 + "<br />" + contacts[i].nom.toUpperCase() + " " + contacts[i].prenom.toUpperCase() + " " + contacts[i].numero;
+            if (a === rechercheNom.value && b === recherchePrenom.value) {
+                resultatRecherche.innerHTML = "a + b" + text;
 
-        } else if (contacts[i].numero === rechercheNumero.value) {
-            element = " ";
+            } else if (b === recherchePrenom.value && c === rechercheNumero.value) {
+                resultatRecherche.innerHTML = "a + c" + text;
 
-            element += contacts.numero;
-            resultatRecherche.innerHTML = titreH3 + contacts[i].nom.toUpperCase() + " " + contacts[i].prenom.toUpperCase() + " " + contacts[i].numero;
+            } else if (b === recherchePrenom.value) {
+                resultatRecherche.innerHTML = "b" + text;
 
+            } else {
+                //resultatRecherche.innerHTML = " Désolé pas de contact a ce nom";
+            }
+
+        } else if (c === rechercheNumero.value) {
+
+            if (c === rechercheNumero.value && b === recherchePrenom.value) {
+                resultatRecherche.innerHTML = "b + c" + text;
+
+            } else if (b === recherchePrenom.value && c === rechercheNumero.value) {
+                resultatRecherche.innerHTML = "a + c" + text;
+
+            } else if (c === rechercheNumero.value) {
+                resultatRecherche.innerHTML = "c" + text;
+
+            } else {
+                //resultatRecherche.innerHTML = " Désolé pas de contact a ce nom";
+            }
         } else {
-            resultatRecherche.innerHTML = "Désolé, ce membre n'existe pas dans notre annuaire";
+            //resultatRecherche.innerHTML = " Désolé pas de contact a ce nom";
+
         }
     }
 
 }
+
+
 
 
 
