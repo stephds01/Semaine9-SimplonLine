@@ -57,6 +57,10 @@ contact1.init("Alfredo","DE SA", "06 80 46 38 42");
 var contact2 = Object.create(Contact);
 contact2.init("Celia","DE SA", "06 00 00 00 00");
 
+var contact3 = Object.create(Contact);
+contact3.init("Camille","DE SA", "06 00 00 22 22");
+
+
     //Je crée un tableau Contact
     var contacts = [];
 
@@ -64,6 +68,7 @@ contact2.init("Celia","DE SA", "06 00 00 00 00");
     contacts.push(contact0);
     contacts.push(contact1);
     contacts.push(contact2);
+    contacts.push(contact3);
 
     ////Je boucle mon tableau d'objet
     //contacts.forEach(function(contact){
@@ -214,15 +219,14 @@ function restaurer () {
 
 
 /*******Je crée une fonction qui ajoute un contact********/
+//var contact3 = Object.create(Contact);
+//contact3.init("Camille","DE SA", "06 00 00 22 22");
 
     function ajouterContact() {
-    contacts.push(
-        {
-            prenom: prenom.value,
-            nom: nom.value,
-            numero: numero.value
+    var contact5 = Object.create(Contact);
+    contact5.init(prenom.value, nom.value, numero.value);
+    contacts.push(contact5);
 
-        });
     afficherListeNvxContact();
     }
 
@@ -255,7 +259,7 @@ function rechercheContact () {
         contacts[i].nom = contacts[i].nom.toLowerCase();
         contacts[i].prenom = contacts[i].prenom.toLowerCase();
 
-        //Creatioin d'une variable texte
+        //Creation d'une variable texte
         var titreH3 = "Voici le résultat de votre recherche : ";
 
         var a = contacts[i].nom;
@@ -267,42 +271,49 @@ function rechercheContact () {
 
             //resultatRecherche.innerHTML = "a";
 
-            if (a === rechercheNom.value && b === recherchePrenom.value) {
-                resultatRecherche.innerHTML = "a + b" + text;
-
-            } else if (a === rechercheNom.value && c === rechercheNumero.value) {
-                resultatRecherche.innerHTML = "a + c" + text;
-
-            } else{
-                resultatRecherche.innerHTML = "a" + "ésolé pas de contact a ce nom";
-            }
-
-
-        } else if (b === recherchePrenom.value) {
-
-            if (a === rechercheNom.value && b === recherchePrenom.value) {
-                resultatRecherche.innerHTML = "a + b" + text;
-
-            } else if (b === recherchePrenom.value && c === rechercheNumero.value) {
-                resultatRecherche.innerHTML = "a + c" + text;
-
-            } else if (b === recherchePrenom.value) {
-                resultatRecherche.innerHTML = "b" + text;
-
-            } else {
-                //resultatRecherche.innerHTML = " Désolé pas de contact a ce nom";
-            }
-
-        } else if (c === rechercheNumero.value) {
-
-            if (c === rechercheNumero.value && b === recherchePrenom.value) {
-                resultatRecherche.innerHTML = "b + c" + text;
-
-            } else if (b === recherchePrenom.value && c === rechercheNumero.value) {
-                resultatRecherche.innerHTML = "a + c" + text;
+            if (b === recherchePrenom.value) {
+                resultatRecherche.innerHTML = text;
 
             } else if (c === rechercheNumero.value) {
-                resultatRecherche.innerHTML = "c" + text;
+                resultatRecherche.innerHTML = text;
+
+            } else if (b === null && c === null){
+                resultatRecherche.innerHTML = text;
+            }
+
+            //else{
+            //    resultatRecherche.innerHTML = "a";
+            //}
+
+
+        }
+        if (b === recherchePrenom.value) {
+
+            if (a === rechercheNom.value) {
+                resultatRecherche.innerHTML = text;
+
+            } else if (c === rechercheNumero.value) {
+                resultatRecherche.innerHTML = text;
+
+            } else if (a === null && c === null) {
+                resultatRecherche.innerHTML = text;
+
+            }
+            //else {
+            //    //resultatRecherche.innerHTML = " Désolé pas de contact a ce nom";
+            //}
+
+        }
+        if (c === rechercheNumero.value) {
+
+            if (b === recherchePrenom.value) {
+                resultatRecherche.innerHTML = text;
+
+            } else if (a === rechercheNom.value) {
+                resultatRecherche.innerHTML = text;
+
+            } else if (a === null && b === null) {
+                resultatRecherche.innerHTML = text;
 
             } else {
                 //resultatRecherche.innerHTML = " Désolé pas de contact a ce nom";
