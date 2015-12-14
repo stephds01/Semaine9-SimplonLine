@@ -35,7 +35,7 @@ elementForm.enctype ="mulyipart/form-data";
 elementForm.method ="post";
 elementForm.action ="upload.php";
 
-elementLabel.for ="inputUpload";
+elementLabel.htmlFor ="inputUpload";
 
 elementInput1.type ="file";
 elementInput1.name ="inputUpload";
@@ -44,12 +44,13 @@ elementInput1.id = "inputUpload";
 elementInput2.type = "submit";
 elementInput2.value = "Envoyer";
 
-//J'insère ds le element Principal
 
+
+//J'insère ds le element Principal
 
 elementDiv.appendChild(elementInput2);
 
-elementDiv.appendChild(elementBr2);
+elementDiv.appendChild(elementBr1.cloneNode(false)); // On clone un2ème element
 elementDiv.appendChild(elementBr1);
 
 elementDiv.appendChild(elementInput1);

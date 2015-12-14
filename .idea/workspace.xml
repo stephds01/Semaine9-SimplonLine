@@ -6,16 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f78f721d-1262-478e-a9b4-3fc946aeb565" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js" afterPath="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js" />
     </list>
     <ignored path="Semaine9-SimplonLine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +39,7 @@
           <file leaf-file-name="exo4.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo4.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.14804064">
+                <state vertical-scroll-proportion="0.18085106">
                   <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
                   <folding />
                 </state>
@@ -59,28 +50,15 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="exo4.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="exo4.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+                <state vertical-scroll-proportion="-0.2101695">
+                  <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#46#0" expanded="false" />
                   </folding>
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.39650145">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-              <provider editor-type-id="MarkdownPreviewEditor">
-                <state />
               </provider>
             </entry>
           </file>
@@ -153,8 +131,8 @@
         <option value="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo3.html" />
         <option value="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo3.js" />
         <option value="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo4.html" />
-        <option value="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js" />
       </list>
     </option>
   </component>
@@ -401,7 +379,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16918844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16823688" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -837,31 +815,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/html/exo4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14804064">
+        <state vertical-scroll-proportion="0.18085106">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39650145">
+        <state vertical-scroll-proportion="0.4848485">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cours2-JS_OCR/chapitre_2/js/exo4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2101695">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
