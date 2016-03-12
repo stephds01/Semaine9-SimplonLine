@@ -21,41 +21,24 @@
 <!----------------------------->
 <!--   Navigation            -->
 <!----------------------------->
-        <!-- Menu  -->
-    <div class="container ls-nav">
+        <div class="container ls-nav">
 
-        <div class="controls">
-            <!--<a class="filter active" data-filter="all">Accueil</a>-->
-
-            <a class="filter" data-filter=".category-1">Inscrire</a>
-                <a class="filter" data-filter=".category-2">Rechercher</a>
-                <a class="filter" data-filter=".category-3">Annuaire</a>
+            <a href="#inscription" id="inscript" >Inscrire</a>
+            <a href="#recherche" id="recherch">Rechercher</a>
+            <a href="#contact" id="contac" >Annuaire</a>
         </div>
-
-        <!--<div class="container ls-nav">-->
-
-            <!--&lt;!&ndash;<div class="controls">&ndash;&gt;-->
-                <!--&lt;!&ndash;&lt;!&ndash;<a class="filter active" data-filter="all">Accueil</a>&ndash;&gt;&ndash;&gt;-->
-
-                <!--<a href="#inscription" class="filter" data-filter=".category-1">Inscrire</a>-->
-                <!--<a href="#recherche" class="filter" data-filter=".category-2">Rechercher</a>-->
-                <!--<a href="#contact" class="filter" data-filter=".category-3">Annuaire</a>-->
-            <!--</div>-->
 
 
 <!----------------------------->
 <!--   MAIN   -->
 <!----------------------------->
 
-        <div id="Container" class="ls-container" >
-
             <!----------------------------->
             <!--   Page Inscription   -->
             <!----------------------------->
 
-            <!--<div id="inscription>-->
-                <div class="mix category-1" data-myorder="1">
-                   <h2>S'inscrire dans l'annuaire</h2>
+            <div id="inscriptionContainer">
+                <h2>S'inscrire dans l'annuaire</h2>
                    <form>
 
                        <p><label>Nom</label>
@@ -81,13 +64,12 @@
                        <button onclick="effacerContact()">Effacer</button>
                        <button onclick="restaurer()">Restaurer</button>
                    </div>
-                </div>
-            <!--</div>-->
+            </div>
 
         <!----------------------------->
             <!--   Page Rechercher   -->
             <!----------------------------->
-            <!--<div id="recherche">-->
+            <div id="rechercheContainer">
                 <div class="mix category-2" data-myorder="2">
                     <h2>Rechercher dans l'annuaire</h2>
                     <div class="containerRecherche">
@@ -101,12 +83,12 @@
                         <p id="resultatRecherche" class="texteRecherche"></p>
                     </div>
                 </div>
-            <!--</div>-->
+            </div>
 
             <!----------------------------->
             <!--   Page Affichage Contact   -->
             <!----------------------------->
-            <!--<div id="contact">-->
+            <div id="contactContainer">
                 <div class="mix category-3" data-filter="3">
                     <h2>Affichage des contacts dans l'annuaire</h2>
                     <div class="containerAffichage">
@@ -126,9 +108,9 @@
                         </div>
                     </div>
                 </div>
-            <!--</div>-->
-        </div>
-    </div>
+            </div>
+        <!--</div>-->
+    <!--</div>-->
 
 
     <footer class ="ls-footer">
@@ -144,9 +126,9 @@
 
     <script type="text/javascript">
         //Instancie le plugIn MixitUp
-        $(function(){
-            $('#Container').mixItUp();
-        });
+//        $(function(){
+//            $('#Container').mixItUp();
+//        });
 
     </script>
 

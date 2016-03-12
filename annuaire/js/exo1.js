@@ -188,11 +188,46 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
 colorLigne();
 
 
+/*****************************************************************/
+/*              MENU                                             */
+/*****************************************************************/
+
+var inscript = document.getElementById('inscript');
+var recherch = document.getElementById('recherch');
+var contac = document.getElementById('contac');
+
+var inscription = document.getElementById('inscriptionContainer');
+var recherche = document.getElementById('rechercheContainer');
+var contact = document.getElementById('contactContainer');
+
+
+function affichageContact() {
+    contact.style.display="block";
+    recherche.style.display="none";
+    inscription.style.display="none";
+}
+
+function affichageRecherche() {
+    recherche.style.display="block";
+    contact.style.display="none";
+    inscription.style.display="none";
+
+
+}
+
+function affichageInscrire() {
+    inscription.style.display="block";
+    contact.style.display="none";
+    recherche.style.display="none";
+}
+
+inscript.addEventListener('click', affichageInscrire, false);
+recherch.addEventListener('click', affichageRecherche, false);
+contac.addEventListener('click', affichageContact, false);
 
 /*****************************************************************/
-/*              PAGE INSCRIRE                                    */
+/*              PAGE INSCRIPTION                                   */
 /*****************************************************************/
-
 /********* Fonction qui affiche le nvx Contact sous le formulaire d'inscription***********/
 function afficherListeNvxContact(){
     var element = "";
