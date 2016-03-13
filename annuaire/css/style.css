@@ -22,7 +22,7 @@ form {
 /*          Portion
 ***********************************************/
 #inscriptionContainer, #rechercheContainer, #contactContainer {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
 }
 
 .ls-header {
@@ -71,19 +71,15 @@ form {
     color:#fdfffd;
 }
 
-
-
-
-
-/*.ls-container {*/
-    /*width: 960px;*/
-    /*min-height: 10vh;*/
-    /*margin: 0 auto 150px auto;*/
-    /*border-top: 2px #FFEB00 solid;*/
-    /*border-radius: 0 0 25px 25px;*/
-    /*background-color: #333;*/
-    /*padding: 20px;*/
-/*}*/
+.ls-container {
+    width: 960px;
+    min-height: 10vh;
+    margin: 155px auto 150px auto;
+    border-top: 2px #FFEB00 solid;
+    border-radius: 0 0 25px 25px;
+    background-color: #333;
+    padding: 20px;
+}
 
 .ls-container h2 {
     color: #FFEB00;
@@ -94,7 +90,7 @@ form {
     /*display: inline-block;*/
     vertical-align: baseline;
     /*text-align: center;*/
-    margin-left: 30%;
+    /*margin-left: 30%;*/
 
 }
 
@@ -190,7 +186,7 @@ th{
     color: #FFEB00;
 }
 td{
-    color: #333;
+    color: #white;
 }
 
 
@@ -226,12 +222,12 @@ td{
 
 
 /*Page inscription*/
-.nomClass {
-    margin-right: 37px;
-}
-.prenomClass {
-    margin-right: 16px;
-}
+/*.nomClass {*/
+    /*margin-right: 37px;*/
+/*}*/
+/*.prenomClass {*/
+    /*margin-right: 16px;*/
+/*}*/
 
 #rechercheContainer {
     display: none;

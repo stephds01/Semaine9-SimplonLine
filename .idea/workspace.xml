@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f78f721d-1262-478e-a9b4-3fc946aeb565" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Stéphanie.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Stéphanie.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annuaire/css/style.css" afterPath="$PROJECT_DIR$/annuaire/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annuaire/index.html" afterPath="$PROJECT_DIR$/annuaire/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annuaire/js/exo1.js" afterPath="$PROJECT_DIR$/annuaire/js/exo1.js" />
@@ -34,21 +36,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/annuaire/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-17.076923">
-                  <caret line="79" column="40" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="40" />
+                <state vertical-scroll-proportion="0.37300435">
+                  <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/annuaire/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.51363635">
-                  <caret line="203" column="24" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
+                <state vertical-scroll-proportion="-9.890909">
+                  <caret line="230" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -63,7 +65,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="33.346153">
                   <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-                  <folding />
+                  <folding>
+                    <marker date="1457907673851" expanded="true" signature="2833:3526" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -71,8 +75,8 @@
           <file leaf-file-name="exo1.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/annuaire/js/exo1.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.77696794">
-                  <caret line="249" column="0" selection-start-line="244" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.23177843">
+                  <caret line="320" column="0" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
                   <folding>
                     <element signature="e#64#225#0" expanded="false" />
                   </folding>
@@ -149,8 +153,8 @@
         <option value="$PROJECT_DIR$/exo1&amp;3 -Simplon/css/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/annuaire/index.html" />
-        <option value="$PROJECT_DIR$/annuaire/js/exo1.js" />
         <option value="$PROJECT_DIR$/annuaire/css/style.css" />
+        <option value="$PROJECT_DIR$/annuaire/js/exo1.js" />
       </list>
     </option>
   </component>
@@ -800,29 +804,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/annuaire/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.890909">
+          <caret line="230" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/annuaire/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.076923">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="33.346153">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <marker date="1457907673851" expanded="true" signature="2833:3526" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/annuaire/js/exo1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77696794">
-          <caret line="249" column="0" selection-start-line="244" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.23177843">
+          <caret line="320" column="0" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
           <folding>
             <element signature="e#64#225#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annuaire/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51363635">
-          <caret line="203" column="24" selection-start-line="203" selection-start-column="24" selection-end-line="203" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>

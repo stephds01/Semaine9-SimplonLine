@@ -316,6 +316,9 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
 
             //J'ajoute tr dans mon tbody
             liste.appendChild(tr);
+
+            colorLigne();
+
         }
     }
     //Affiche tes contacts ds le tableau HTML
