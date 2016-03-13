@@ -68,8 +68,8 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
     var nvxContact = document.getElementById('nvxContact');
 
     /**************** Page Recherche   ************************/
-    var error = document.getElementById('error');
-
+    var recherc = document.getElementById('recherc');
+    //var error = document.getElementById('error');
 
 
 
@@ -183,7 +183,7 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
     function rechercheContact () {
 
         resultatRecherche.innerHTML = '';
-
+        var error = document.getElementById('error');
 
 
         function resut() {
@@ -195,6 +195,8 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
             li.appendChild(liText);
 
             resultatRecherche.appendChild(li);
+            error.innerHTML="";
+
         }
 
         rechercheNom.value = rechercheNom.value.toLowerCase();
@@ -218,7 +220,6 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
 
             if (a === rechercheNom.value || b === recherchePrenom.value || c === rechercheNumero.value ) {
                 if (a === rechercheNom.value) {
-                    //error.innerHTML='';
 
                     for (var t = 0; t < contacts.length; t++) {
                         tabs.push(contacts[t]);
@@ -226,7 +227,6 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
                     resut();
 
                 } else if (b === recherchePrenom.value) {
-                    //error.innerHTML='';
 
                     for (var t = 0; t < contacts.length; t++) {
                         tabs.push(contacts[t]);
@@ -234,7 +234,6 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
                     resut();
 
                 } else if (c === rechercheNumero.value) {
-                    //error.innerHTML='';
 
                     for (var t = 0; t < contacts.length; t++) {
                         tabs.push(contacts[t]);
@@ -242,19 +241,22 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
                     resut();
 
                 }
-            } else  {
-                //error.innerHTML='Dommage , il n\'y a pas de contact avec ces informations';
-
             }
+            //else if(){
+            //    alert('Dommage , il n\'y a pas de contact avec ces informations');
+            //
+            //
+            //}
+
         }
+        //var error = document.getElementById('error');
+
         rechercheNom.value = "";
         recherchePrenom.value = "";
         rechercheNumero.value = "";
     }
 
 
-    var recherc = document.getElementById('recherc');
-    recherc.addEventListener('click', rechercheContact, false);
 
 
     /*****************************************************************/
@@ -364,10 +366,13 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
     ajouter.addEventListener('click',ajouterContact ,false);
 
 
+    /*******    Page Recherche    ***********/
+    recherc.addEventListener('click', rechercheContact, false);
 
-/*******    Page Annuaire    ***********/
 
-contac.addEventListener('click',afficheContact , false);
+    /*******    Page Annuaire    ***********/
+
+    contac.addEventListener('click',afficheContact , false);
 
 
 

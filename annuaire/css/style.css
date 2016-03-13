@@ -195,8 +195,19 @@ td{
 
 
 .texteRecherche {
-    text-align: center;
+    text-align: left;
     color: #fefefe;
+    width: 38%;
+    margin-left: 31%;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#liSuppr {
+    padding: 15px;
+    list-style: none;
+
 }
 
 .paragraphe {
@@ -230,6 +241,9 @@ td{
     display: none;
 }
 
+/*#error {*/
+    /*display: none;*/
+/*}*/
 
 /*****************************************/
 /*          EVENEMENT
