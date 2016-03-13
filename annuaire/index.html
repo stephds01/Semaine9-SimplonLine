@@ -5,123 +5,118 @@
     <title>Exo 1- Les Objets- Création de l'Annuaire</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> />
 </head>
 
 <body>
     <div id="containainerPrincipal">
-<!----------------------------->
-<!--   Header                -->
-<!----------------------------->
-    <div class="ls-header" >
-        <img src="http://static5.pagesjaunes.fr/common/images/logo_pagesjaunes_-6868d0.png" width="100" height=100"/>
-        <h1>Annuaire Téléphonique</h1>
-    </div>
-
-<!----------------------------->
-<!--   Navigation            -->
-<!----------------------------->
-        <div class="container ls-nav">
-
-            <a href="#inscription" id="inscript" >Inscrire</a>
-            <a href="#recherche" id="recherch">Rechercher</a>
-            <a href="#contact" id="contac" >Annuaire</a>
+        <!----------------------------->
+        <!--   Header                -->
+        <!----------------------------->
+        <div class="ls-header" >
+            <img src="http://static5.pagesjaunes.fr/common/images/logo_pagesjaunes_-6868d0.png" width="100" height=100"/>
+            <h1>Annuaire Téléphonique</h1>
         </div>
 
+        <!----------------------------->
+        <!--   Navigation            -->
+        <!----------------------------->
+         <div class="container ls-nav">
+           <a href="#inscription" id="inscript" >Inscrire</a>
+             <a href="#recherche" id="recherch">Rechercher</a>
+             <a href="#contact" id="contac" >Annuaire</a>
+         </div>
 
-<!----------------------------->
-<!--   MAIN   -->
-<!----------------------------->
-
-            <!----------------------------->
-            <!--   Page Inscription   -->
-            <!----------------------------->
-
-            <div id="inscriptionContainer">
-                <h2>S'inscrire dans l'annuaire</h2>
-                   <form>
-
-                       <p><label>Nom</label>
-                           <input id="nom" />
-                       </p>
-
-                       <p><label>Prénom</label>
-                           <input id="prenom" />
-                       </p>
-
-                       <p><label>Téléphone</label>
-                           <input id="numero" />
-                       </p>
-
-                       <button class="ajouter" onclick="ajouterContact()">Ajouter</button>
-                       <button class="supprimer"  onclick="supprimerContact()">Supprimer</button>
-                   </form>
-
-                   <div class="paragraphe">
-                       <h2>Affichage des derniers contacts</h2>
-                       <ul id="nvxContact" class="nvxContact">
-                       </ul>
-                       <button onclick="effacerContact()">Effacer</button>
-                       <button onclick="restaurer()">Restaurer</button>
-                   </div>
-            </div>
 
         <!----------------------------->
-            <!--   Page Rechercher   -->
-            <!----------------------------->
-            <div id="rechercheContainer">
-                <div class="mix category-2" data-myorder="2">
-                    <h2>Rechercher dans l'annuaire</h2>
-                    <div class="containerRecherche">
-                        <input id="rechercheNom" placeholder="Nom"/>
-                        <input id="recherchePrenom" placeholder="Prenom"/>
-                        <input id="rechercheNumero" placeholder="Numéro"/>
-                        <button class="rechercher" onclick="rechercheContact()">Rechercher</button>
-                    </div>
-                    <div>
-                        <h4></h4>
-                        <p id="resultatRecherche" class="texteRecherche"></p>
-                    </div>
+        <!--   MAIN   -->
+        <!----------------------------->
+
+                <!----------------------------->
+                <!--   Page Inscription   -->
+                <!----------------------------->
+
+                <div id="inscriptionContainer">
+                    <h2>S'inscrire dans l'annuaire</h2>
+                       <form>
+                           <p><label class="nomClass">Nom</label>
+                               <input id="nom"  />
+                           </p>
+
+                           <p><label class="prenomClass">Prénom</label>
+                               <input id="prenom" />
+                           </p>
+
+                           <p><label>Téléphone</label>
+                               <input id="numero" />
+                           </p>
+
+                           <button id="ajouter" class="ajouter">Ajouter</button>
+                           <button class="supprimer"  onclick="supprimerContact()">Supprimer</button>
+                       </form>
+
+                       <div class="paragraphe">
+                           <h2>Affichage des derniers contacts</h2>
+                           <ul id="nvxContact" class="nvxContact">
+                           </ul>
+                           <button onclick="effacerContact()">Effacer</button>
+                           <button onclick="restaurer()">Restaurer</button>
+                       </div>
                 </div>
-            </div>
 
-            <!----------------------------->
-            <!--   Page Affichage Contact   -->
-            <!----------------------------->
-            <div id="contactContainer">
-                <div class="mix category-3" data-filter="3">
-                    <h2>Affichage des contacts dans l'annuaire</h2>
-                    <div class="containerAffichage">
-                        <div id="rechercher">
-                            <table id="table">
-                                <thead>
-                                    <tr id="bg">
-                                        <th>Prénom</th>
-                                        <th>Nom</th>
-                                        <th>Téléphone</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="liste">
+                <!----------------------------->
+                <!--   Page Rechercher   -->
+                <!----------------------------->
+                <div id="rechercheContainer">
+                    <div class="mix category-2" data-myorder="2">
+                        <h2>Rechercher dans l'annuaire</h2>
+                        <div class="containerRecherche">
+                            <input id="rechercheNom" placeholder="Nom"/>
+                            <input id="recherchePrenom" placeholder="Prenom"/>
+                            <input id="rechercheNumero" placeholder="Numéro"/>
+                            <button id="recherc" class="rechercher">Rechercher</button>
+                        </div>
+                        <div>
+                            <ul id="resultatRecherche" class="texteRecherche">
 
-                                </tbody>
-                            </table>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <!----------------------------->
+                <!--   Page Affichage Contact   -->
+                <!----------------------------->
+                <div id="contactContainer">
+                     <h2>Affichage des contacts dans l'annuaire</h2>
+                     <div class="containerAffichage">
+                         <div id="rechercher">
+                             <table id="table">
+                                 <thead>
+                                     <tr id="bg">
+                                         <th>Prénom</th>
+                                         <th>Nom</th>
+                                         <th>Téléphone</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody id="liste">
+                               </tbody>
+                             </table>
+                         </div>
+                     </div>
+                </div>
+            <!--</div>-->
         <!--</div>-->
-    <!--</div>-->
-
-
-    <footer class ="ls-footer">
-        <p>Annuaire 2015</p>
-    </footer>
 
     </div>
+        <footer class ="ls-footer">
+            <p>Annuaire 2015</p>
+        </footer>
+
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-    <script src="js/mixitup.js"></script>
+    <!--<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>-->
+    <!--<script src="js/mixitup.js"></script>-->
     <script src="js/exo1.js"></script>
 
     <script type="text/javascript">
