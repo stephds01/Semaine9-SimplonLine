@@ -1,7 +1,7 @@
 /****Je crée le prototype de l'objet contact****/
 var Contact = {
     //Initialise le contact
-    init:function(prenom, nom, numero){
+    init:function(nom, prenom, numero){
         this.nom = nom;
         this.prenom = prenom;
         this.numero = numero;
@@ -71,7 +71,6 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
 
     /**************** Page Recherche   ************************/
     var recherc = document.getElementById('recherc');
-    //var error = document.getElementById('error');
 
 
 
@@ -121,7 +120,7 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
         var element = "";
         for(var i =0; i< contacts.length; i++){
             element += "<li>";
-            element += contacts[i].nom.toUpperCase() + " " + contacts[i].prenom + " " + contacts[i].numero;
+            element += '<span class="upper">' + contacts[i].nom.toUpperCase() + '</span>' + ' <span class="capi">' + contacts[i].prenom + ' </span> ' + contacts[i].numero;
             element += "</li>";
 
         }
@@ -154,39 +153,33 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
         if(nom.value === "" && prenom.value === "" && numero.value === "") {
             alert('Il y a aucun champ saisie !');
 
-        } else if (regNom.test(nom.value) === true || regPrenom.test(prenom.value) === true || regTel.test(numero.value) === true) {
+        } else if (regNom.test(nom.value)== false) {
 
-            if (regNom.test(nom.value) === true) {
-                alert('Oups,la saisie de votre nom n\'est pas valide ! ');
+            alert(' 1 de vos champs est null 1 ');
                 nom.value = "";
 
-            } else if (regPrenom.test(prenom.value) === false) {
-                console.log('reg' +  regPrenom);
-                console.log('val' +  prenom.value);
-                console.log(  regPrenom.test(prenom.value));
+            } else if (regPrenom.test(prenom.value)== false) {
 
-                alert('Oups,la saisie de votre prenom n\'est pas valide ! ');
+            alert(' 1 de vos champs est null 2 ');
                 prenom.value = "";
 
+            } else if (regTel.test(numero.value) == false) {
 
-            } else if (regTel.test(numero.value)=== false) {
-                alert('Oups,la saisie de votre numéro n\'est pas valide ! ');
+            alert(' 1 de vos champs est null 3 ');
                 numero.value = "";
-                console.log('lol numero');
 
-            }else {
-                var contactNew = Object.create(Contact);
-                contactNew.init(nom.value, prenom.value, numero.value);
-                contacts.push(contactNew);
+        } else {
+            var contactNew = Object.create(Contact);
+            contactNew.init(nom.value, prenom.value, numero.value);
+            contacts.push(contactNew);
 
-                afficherListeNvxContact();
+            afficherListeNvxContact();
 
-                nom.value = "";
-                prenom.value = "";
-                numero.value = "";
-            }
-
+            nom.value = "";
+            prenom.value = "";
+            numero.value = "";
         }
+
     }
 
 
@@ -207,7 +200,6 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
     function rechercheContact () {
 
         resultatRecherche.innerHTML = '';
-        var error = document.getElementById('error');
 
 
         function resut() {
@@ -219,7 +211,6 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
             li.appendChild(liText);
 
             resultatRecherche.appendChild(li);
-            error.innerHTML="";
 
         }
 

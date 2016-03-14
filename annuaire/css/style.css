@@ -16,7 +16,13 @@ form {
     text-align: center;
 }
 
+.capi {
+    text-transform: capitalize;
+}
 
+.upper {
+    text-transform: uppercase;
+}
 
 /**********************************************/
 /*          Portion
