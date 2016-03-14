@@ -2,23 +2,23 @@
 var Contact = {
     //Initialise le contact
     init:function(prenom, nom, numero){
-        this.prenom = prenom;
         this.nom = nom;
+        this.prenom = prenom;
         this.numero = numero;
     }
 };
 
 var contact0 = Object.create(Contact);
-contact0.init("Stephanie","GOUJON", "06 75 74 32 01");
+contact0.init("GOUJON", "Stephanie", "06 75 74 32 01");
 
 var contact1 = Object.create(Contact);
-contact1.init("Alfredo","DE SA", "06 80 46 38 42");
+contact1.init("DE SA", "Alfredo", "06 80 46 38 42");
 
 var contact2 = Object.create(Contact);
-contact2.init("Celia","DE SA", "06 00 00 00 00");
+contact2.init("DE SA", "Celia", "06 00 00 00 00");
 
 var contact3 = Object.create(Contact);
-contact3.init("Camille","DE SA", "06 00 00 22 22");
+contact3.init("DE SA", "Camille", "06 00 00 22 22");
 
 
     //Je crée un tableau Contact
@@ -46,9 +46,11 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
     var recherch = document.getElementById('recherch');
     var contac = document.getElementById('contac');
 
+    var logo = document.getElementById('logo');
     var inscription = document.getElementById('inscriptionContainer');
     var recherche = document.getElementById('rechercheContainer');
     var contact = document.getElementById('contactContainer');
+    var home = document.getElementById('homeContainer');
 
     /**************** Affichage des input     ************************/
     var rechercheNom = document.getElementById('rechercheNom');
@@ -82,19 +84,31 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
         contact.style.display="block";
         recherche.style.display="none";
         inscription.style.display="none";
+        home.style.display="none";
     }
 
     function affichageRecherche() {
         recherche.style.display="block";
         contact.style.display="none";
         inscription.style.display="none";
+        home.style.display="none";
     }
 
     function affichageInscrire() {
         inscription.style.display="block";
         contact.style.display="none";
         recherche.style.display="none";
+        home.style.display="none";
     }
+
+    function affichageLogo() {
+        home.style.display="block";
+        inscription.style.display="none";
+        contact.style.display="none";
+        recherche.style.display="none";
+    }
+
+
 
 
 
@@ -107,7 +121,7 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
         var element = "";
         for(var i =0; i< contacts.length; i++){
             element += "<li>";
-            element += contacts[i].prenom + " " + contacts[i].nom + " " + contacts[i].numero;
+            element += contacts[i].nom.toUpperCase() + " " + contacts[i].prenom + " " + contacts[i].numero;
             element += "</li>";
 
         }
@@ -131,16 +145,38 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
 
 
     /*******Je crée une fonction qui ajoute un contact********/
-        function ajouterContact() {
+    function ajouterContact() {
 
         var regNom = /^[a-zA-Zéèë]+$|[a-zA-Zéèë]+[-]+[a-zA-Zéèë]+$|[a-zA-Zéèë]+[\\ ]+[a-zA-Zéèë]+$/gi;
         var regPrenom = /^[a-zA-Zéèë]+$|[a-zA-Zéèë]+[-]+[a-zA-Zéèë]+$|[a-zA-Zéèë]+[\\ ]+[a-zA-Zéèë]+$/gi;
-        var regTel = /^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/gi;
+        var regTel = /^(0|\+33)[1-9]([-. ]?[0-9]{2}){4}$/g;
 
-            if( regNom.test(nom.value) == true && regPrenom.test(prenom.value) == true && regTel.test(numero.value) == true) {
+        if(nom.value === "" && prenom.value === "" && numero.value === "") {
+            alert('Il y a aucun champ saisie !');
 
+        } else if (regNom.test(nom.value) === true || regPrenom.test(prenom.value) === true || regTel.test(numero.value) === true) {
+
+            if (regNom.test(nom.value) === true) {
+                alert('Oups,la saisie de votre nom n\'est pas valide ! ');
+                nom.value = "";
+
+            } else if (regPrenom.test(prenom.value) === false) {
+                console.log('reg' +  regPrenom);
+                console.log('val' +  prenom.value);
+                console.log(  regPrenom.test(prenom.value));
+
+                alert('Oups,la saisie de votre prenom n\'est pas valide ! ');
+                prenom.value = "";
+
+
+            } else if (regTel.test(numero.value)=== false) {
+                alert('Oups,la saisie de votre numéro n\'est pas valide ! ');
+                numero.value = "";
+                console.log('lol numero');
+
+            }else {
                 var contactNew = Object.create(Contact);
-                contactNew.init(prenom.value, nom.value, numero.value);
+                contactNew.init(nom.value, prenom.value, numero.value);
                 contacts.push(contactNew);
 
                 afficherListeNvxContact();
@@ -148,20 +184,10 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
                 nom.value = "";
                 prenom.value = "";
                 numero.value = "";
-
-            } else if(regNom.test(nom.value) == false) {
-                alert('oups,la saisie de votre nom n\'est pas valide ! ');
-                nom.value = "";
-            } else if(regPrenom.test(prenom.value) == false) {
-                alert('oups,la saisie de votre prenom n\'est pas valide ! ');
-                prenom.value = "";
-            } else if(regTel.test(numero.value) == false) {
-                alert('oups,la saisie de votre numero n\'est pas valide ! ');
-                numero.value = "";
             }
 
-        //afficheContact();
         }
+    }
 
 
 
@@ -178,8 +204,6 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
     /*****************************************************************/
     /*              PAGE RECHERCHE                                   */
     /*****************************************************************/
-
-
     function rechercheContact () {
 
         resultatRecherche.innerHTML = '';
@@ -215,41 +239,20 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
             var b = contacts[i].prenom;
             var c = contacts[i].numero;
 
-
-
-
             if (a === rechercheNom.value || b === recherchePrenom.value || c === rechercheNumero.value ) {
-                if (a === rechercheNom.value) {
 
-                    for (var t = 0; t < contacts.length; t++) {
-                        tabs.push(contacts[t]);
-                    }
-                    resut();
-
-                } else if (b === recherchePrenom.value) {
-
-                    for (var t = 0; t < contacts.length; t++) {
-                        tabs.push(contacts[t]);
-                    }
-                    resut();
-
-                } else if (c === rechercheNumero.value) {
-
-                    for (var t = 0; t < contacts.length; t++) {
-                        tabs.push(contacts[t]);
-                    }
-                    resut();
-
+                for (var t = 0; t < contacts.length; t++) {
+                    tabs.push(contacts[t]);
                 }
+                resut();
             }
-            //else if(){
-            //    alert('Dommage , il n\'y a pas de contact avec ces informations');
-            //
-            //
-            //}
-
         }
-        //var error = document.getElementById('error');
+        if(rechercheNom.value === "" && recherchePrenom.value === "" && rechercheNumero.value === "") {
+            rechercheNom.value = "";
+            alert('Oups, il y a aucun champs de renseigné');
+        } else if (a != rechercheNom.value && b != recherchePrenom.value && c != rechercheNumero.value){
+            alert('Désolé, il n\'y a aucun contact');
+        }
 
         rechercheNom.value = "";
         recherchePrenom.value = "";
@@ -363,6 +366,7 @@ contact3.init("Camille","DE SA", "06 00 00 22 22");
     inscript.addEventListener('click', affichageInscrire, false);
     recherch.addEventListener('click', affichageRecherche, false);
     contac.addEventListener('click', affichageContact, false);
+    logo.addEventListener('click', affichageLogo, false);
 
 
     /*******    Page Inscription    ***********/

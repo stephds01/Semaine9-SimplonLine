@@ -229,6 +229,15 @@ td{
     /*margin-right: 16px;*/
 /*}*/
 
+#homeContainer {
+    display: block;
+}
+
+#inscriptionContainer {
+    display: none;
+}
+
+
 #rechercheContainer {
     display: none;
 }
@@ -236,6 +245,22 @@ td{
 #contactContainer {
     display: none;
 }
+
+#homeContainer p {
+    color: yellow;
+    text-align: center;
+}
+
+#homeContainer span {
+    font-size: 60px;
+    color: yellow;
+}
+#homeContainer span {
+     font-size: 60px;
+     color: yellow;
+ }
+
+
 
 /*#error {*/
     /*display: none;*/

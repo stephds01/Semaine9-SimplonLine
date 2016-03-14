@@ -14,7 +14,7 @@
         <!--   Header                -->
         <!----------------------------->
         <div class="ls-header" >
-            <img src="http://static5.pagesjaunes.fr/common/images/logo_pagesjaunes_-6868d0.png" width="100" height=100"/>
+            <img src="http://static5.pagesjaunes.fr/common/images/logo_pagesjaunes_-6868d0.png" width="100" height=100"  id="logo" />
             <h1>Annuaire Téléphonique</h1>
         </div>
 
@@ -35,8 +35,19 @@
                 <!----------------------------->
                 <!--   Page Inscription   -->
                 <!----------------------------->
-            <div class="ls-container">
-                <div id="inscriptionContainer">
+            <div class="ls-container"  >
+
+                <div id="homeContainer">
+                    <h2>Bienvenue sur PAGE JAUNE</h2>
+                    <p>Nous sommes votre partenaire historique, et nous vous mettons notre expérience à votre service pour vos recherches de correspondant .</p>
+                    <p>Rechercher vos contacts avec notre outils friendly ! </p>
+                    <p><span> ;) </span></p>
+                </div>
+
+
+
+
+                <div id="inscriptionContainer" >
                     <h2>S'inscrire dans l'annuaire</h2>
                        <form>
                            <p><label class="nomClass">Nom</label>
@@ -67,8 +78,7 @@
                 <!----------------------------->
                 <!--   Page Rechercher   -->
                 <!----------------------------->
-                <div id="rechercheContainer">
-                    <!--<div class="mix category-2" data-myorder="2">-->
+                <div id="rechercheContainer" >
                         <h2>Rechercher dans l'annuaire</h2>
                         <div class="containerRecherche">
                             <input id="rechercheNom" placeholder="Nom"/>
@@ -80,13 +90,12 @@
                             <p id="error"></p>
                             <ul id="resultatRecherche" class="texteRecherche"></ul>
                         </div>
-                    <!--</div>-->
                 </div>
 
                 <!----------------------------->
                 <!--   Page Affichage Contact   -->
                 <!----------------------------->
-                <div id="contactContainer">
+                <div id="contactContainer" >
                      <h2>Affichage des contacts dans l'annuaire</h2>
                      <div class="containerAffichage">
                          <div id="rechercher">
