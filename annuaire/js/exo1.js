@@ -155,17 +155,17 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
 
         } else if (regNom.test(nom.value)== false) {
 
-            alert(' 1 de vos champs est null 1 ');
+            alert(' Votre nom n\'est pas valide ');
                 nom.value = "";
 
             } else if (regPrenom.test(prenom.value)== false) {
 
-            alert(' 1 de vos champs est null 2 ');
+            alert(' Votre prénom n\'est pas valide ');
                 prenom.value = "";
 
             } else if (regTel.test(numero.value) == false) {
 
-            alert(' 1 de vos champs est null 3 ');
+            alert(' Votre numéro n\'est pas valide ');
                 numero.value = "";
 
         } else {
@@ -219,6 +219,13 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
 
         var tabs = [];
 
+        if(rechercheNom.value === "" && recherchePrenom.value === "" && rechercheNumero.value === "") {
+            rechercheNom.value = "";
+            alert('Oups, il y a aucun champs de renseigné');
+
+        }
+
+
         for (var i = 0; i < contacts.length; i++) {
 
             //On transforme en minuscule les élément du tab
@@ -236,13 +243,12 @@ contact3.init("DE SA", "Camille", "06 00 00 22 22");
                     tabs.push(contacts[t]);
                 }
                 resut();
-            }
-        }
-        if(rechercheNom.value === "" && recherchePrenom.value === "" && rechercheNumero.value === "") {
-            rechercheNom.value = "";
-            alert('Oups, il y a aucun champs de renseigné');
-        } else if (a != rechercheNom.value && b != recherchePrenom.value && c != rechercheNumero.value){
-            alert('Désolé, il n\'y a aucun contact');
+            } else {
+                rechercheNom.value = "";
+                recherchePrenom.value = "";
+                rechercheNumero.value = "";
+
+                }
         }
 
         rechercheNom.value = "";

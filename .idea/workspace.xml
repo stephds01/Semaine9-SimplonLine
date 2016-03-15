@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f78f721d-1262-478e-a9b4-3fc946aeb565" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annuaire/css/style.css" afterPath="$PROJECT_DIR$/annuaire/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annuaire/index.html" afterPath="$PROJECT_DIR$/annuaire/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annuaire/js/exo1.js" afterPath="$PROJECT_DIR$/annuaire/js/exo1.js" />
     </list>
     <ignored path="Semaine9-SimplonLine.iws" />
@@ -37,8 +36,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/annuaire/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38484848">
-                  <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+                <state vertical-scroll-proportion="0.10151515">
+                  <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -61,8 +60,8 @@
           <file leaf-file-name="exo1.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/annuaire/js/exo1.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.0303952">
-                  <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.82370824">
+                  <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -147,8 +146,8 @@
         <option value="$PROJECT_DIR$/exo1&amp;3 -Simplon/css/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/annuaire/css/style.css" />
-        <option value="$PROJECT_DIR$/annuaire/js/exo1.js" />
         <option value="$PROJECT_DIR$/annuaire/index.html" />
+        <option value="$PROJECT_DIR$/annuaire/js/exo1.js" />
       </list>
     </option>
   </component>
@@ -806,18 +805,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/annuaire/js/exo1.js">
+    <entry file="file://$PROJECT_DIR$/annuaire/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0303952">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state vertical-scroll-proportion="20.192308">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/annuaire/index.html">
+    <entry file="file://$PROJECT_DIR$/annuaire/js/exo1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38484848">
-          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.82370824">
+          <caret line="257" column="0" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
           <folding />
         </state>
       </provider>
